@@ -1,0 +1,183 @@
+{
+  "manufacturer": "EMBS",
+  "description": "Test device",
+  "mapping": [
+    {
+      "name": "Input 1",
+      "address": 113,
+      "bus_datatype": "float32",
+      "datatype": "uint32",
+      "type": "register",
+      "value_custom": {
+        "1": "val 1",
+        "2": "val 2",
+        "3": "val 3"
+      },
+      "units": "A",
+      "writable": "true"
+    },
+    {
+      "name": "Input 2",
+      "address": 117,
+      "bus_datatype": "float32",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "A",
+      "writable": "false"
+    },
+    {
+      "name": "Input 3",
+      "address": 121,
+      "bus_datatype": "float32",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "A"
+    },
+    {
+      "name": "Input 4",
+      "address": 125,
+      "bus_datatype": "float32",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "A"
+    },
+    {
+      "name": "Input 5",
+      "address": 129,
+      "bus_datatype": "float32",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "A"
+    },
+    {
+      "name": "Input 6",
+      "address": 133,
+      "bus_datatype": "float16",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "A"
+    },
+    {
+      "name": "Input 7",
+      "address": 137,
+      "bus_datatype": "uint16",
+      "datatype": "uint32",
+      "type": "register",
+      "value_custom": {
+        "0": "Text 1",
+        "1": "Text 2",
+        "2": "Text 3",
+        "3": "Text 4",
+        "4": "Text 5",
+        "5": "Text 6",
+        "6": "Text 7",
+        "7": "Text 8"
+      },
+      "units": "A"
+    },
+    {
+      "name": "Input 8",
+      "address": 141,
+      "bus_datatype": "uint24",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "A"
+    },
+    {
+      "name": "Input 9",
+      "address": 145,
+      "bus_datatype": "uint32",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "A"
+    },
+    {
+      "name": "Input 10",
+      "address": 149,
+      "bus_datatype": "int16",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "A"
+    },
+    {
+      "name": "Output 1",
+      "address": 115,
+      "bus_datatype": "float32",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "W"
+    },
+    {
+      "name": "Output 2",
+      "address": 119,
+      "bus_datatype": "int64",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "W"
+    },
+    {
+      "name": "Output 3",
+      "address": 123,
+      "bus_datatype": "uint32",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "W"
+    },
+    {
+      "name": "Output 4",
+      "address": 127,
+      "bus_datatype": "uint16",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "W"
+    },
+    {
+      "name": "Output 5",
+      "address": 131,
+      "bus_datatype": "int16",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "W"
+    },
+    {
+      "name": "Output 6",
+      "address": 135,
+      "bus_datatype": "uint16",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "W"
+    },
+    {
+      "name": "Output 7",
+      "address": 139,
+      "bus_datatype": "int16",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "W"
+    },
+    {
+      "name": "Output 8",
+      "address": 143,
+      "bus_datatype": "scale",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "W"
+    },
+    {
+      "name": "Output 9",
+      "address": 147,
+      "bus_datatype": "uint16",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "W"
+    },
+    {
+      "name": "Output 10",
+      "address": 151,
+      "bus_datatype": "scale",
+      "datatype": "uint32",
+      "type": "register",
+      "units": "W"
+    }
+  ]
+}
