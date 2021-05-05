@@ -1,4 +1,4 @@
--- Este script averigua la IP pública y la guarda en 0/0/1.
+-- Este script averigua la IP pÃºblica y la guarda en 0/0/1.
 
 ip = require('ssl.https').request('https://openrb.com/ip/')
 if ip then
