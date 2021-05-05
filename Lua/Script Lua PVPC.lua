@@ -1,4 +1,4 @@
--- Incluir las librerÌas necesarias
+-- Incluir las librer√≠as necesarias
 https = require('ssl.https')
 json = require('json')
 ltn12 = require('ltn12')
@@ -8,18 +8,18 @@ payload =  ''
 token ='su token' 
 Token=('Token token=\34'..token..'\34')
 
--- ObtenciÛn de la fecha para la peticiÛn
-tom = os.time(os.date('*t')) + 86400 	--Hoy m·s 86400 segundos (+1 dÌa)
+-- Obtenci√≥n de la fecha para la petici√≥n
+tom = os.time(os.date('*t')) + 86400 	--Hoy m√°s 86400 segundos (+1 d√≠a)
 tomorrow = os.date("*t", tom)
 day = tomorrow.day
 month = tomorrow.month
 year = tomorrow.year
 
 
--- Url donde est· el PVPC con su correspondiente indicador 10229
-url = 'https://api.esios.ree.es/indicators/10229?start_date='..day..'-'..month..'-'..year..'T00%3A00&end_date='..day..'-'..month..'-'..year..'T23%3A50' --TÈrmino de facturaciÛn de energÌa activa del PVPC
+-- Url donde est√° el PVPC con su correspondiente indicador 10229
+url = 'https://api.esios.ree.es/indicators/10229?start_date='..day..'-'..month..'-'..year..'T00%3A00&end_date='..day..'-'..month..'-'..year..'T23%3A50' --T√©rmino de facturaci√≥n de energ√≠a activa del PVPC
 
--- PeticiÛn
+-- Petici√≥n
 response_body = {}
   
 body, code, hdrs, stat = https.request ({
@@ -36,11 +36,11 @@ headers = {
     sink = ltn12.sink.table(response_body);
 })
 
--- ComprobaciÛn que la recepciÛn en correcta
+-- Comprobaci√≥n que la recepci√≥n en correcta
 if type(response_body) ~= 'table' then												-- Si el contenido de la variable es distinto a una tabla entonces
-  alert('Fallo al cargar la informaciÛn')														
+  alert('Fallo al cargar la informaci√≥n')														
 elseif code == 200 then																	-- Si la llamada devuelve el codigo 200, todo OK
-  log(code .. ' Datos obtenidos con Èxito')
+  log(code .. ' Datos obtenidos con √©xito')
 elseif code == 401 then																	-- Si la llamada devuelve el codigo de error 401 o 404																													
   alert(code .. ' Fallo con la llave de la API')										-- Mensajes de error
 elseif code == 404 then
@@ -49,7 +49,7 @@ elseif code == 404 then
   return
 end
 
--- Tratamiento de los datos recibidos uniÈndolos en una sola cadena y decodificando el Json
+-- Tratamiento de los datos recibidos uni√©ndolos en una sola cadena y decodificando el Json
 response = table.concat(response_body)
 data = require('json').decode(response)
 
