@@ -1,4 +1,4 @@
-require('ssl.https') 			-- Requiere la librería
+require('ssl.https') 			-- Requiere la librerÃ­a
 
 local token = 'token' 			-- Su API Token
 local chat_id = '1234567'		 -- Su ID de chat
