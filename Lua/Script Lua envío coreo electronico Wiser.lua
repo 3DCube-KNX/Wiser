@@ -1,18 +1,18 @@
 -- Script en Lua para enviar un e-mail con Wiser
 function mail(to, subject, message)
--- Asegurarse que esta configuración es correcta
+-- Asegurarse que esta configuraciÃ³n es correcta
   local settings = {
--- campo "From/desde", solo una dirección de correo debe ser especificada aquí
+-- campo "From/desde", solo una direcciÃ³n de correo debe ser especificada aquÃ­
     from = 'domocorreoknx@gmail.com,
 -- nombre de usuario de la cuenta
     user = domocorreoknx@gmail.com,
--- contraseña de la cuenta
+-- contraseÃ±a de la cuenta
     password = 'e4d050f6df',
 -- Nombre del servidor de correo smtp
     server = 'smtp.gmail.com',
 -- Puesto del servidor de correo smtp 
     port = 465,
--- Habilitar tls (Transport Security Layer) , necesario para la seguridad de la comunicación con el servidor smtp de gmail
+-- Habilitar tls (Transport Security Layer) , necesario para la seguridad de la comunicaciÃ³n con el servidor smtp de gmail
     secure = 'tlsv1_2',
   }
 
