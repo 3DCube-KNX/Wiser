@@ -1,8 +1,8 @@
-require 'ssl.https' -- LibrerÌa necesaria para que el script funcione
+require 'ssl.https' -- Librer√≠a necesaria para que el script funcione
  
 local pushover_url = 'https://api.pushover.net/1/messages.json'
-local token = 'COPIE EL API TOKEN AQUÕ' -- AquÌ se debe copiar el API Token.
-local user = 'COPIE EL USER TOKEN AQUÕ' -- AquÌ se debe copiar el USER Token.
+local token = 'COPIE EL API TOKEN AQU√ç' -- Aqu√≠ se debe copiar el API Token.
+local user = 'COPIE EL USER TOKEN AQU√ç' -- Aqu√≠ se debe copiar el USER Token.
 function pushover(title, message, sound, priority, retry, expire)
      if priority < -2 then priority = -2 end
      if priority > 2 then priority = 2 end      
