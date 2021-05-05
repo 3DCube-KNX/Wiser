@@ -6,10 +6,10 @@ mb = luamodbus.tcp()
 mb:open('192.168.0.12', 502)
 mb:connect()
 
--- Vacía los bytes leídos / no enviados, devuelve el resultado de la operación de vaciado.
+-- VacÃ­a los bytes leÃ­dos / no enviados, devuelve el resultado de la operaciÃ³n de vaciado.
 mb:flush()
 
--- Definición de variables
+-- DefiniciÃ³n de variables
 local Registro_1, Registro_2
 
 -- Leer dos registros desde la direccion 0 y guardar en orden en las variables
