@@ -16,8 +16,8 @@ month = tomorrow.month
 year = tomorrow.year
 
 
--- Url donde está el PVPC con su correspondiente indicador 10229
-url = 'https://api.esios.ree.es/indicators/10229?start_date='..day..'-'..month..'-'..year..'T00%3A00&end_date='..day..'-'..month..'-'..year..'T23%3A50' --Término de facturación de energía activa del PVPC
+-- Url donde está el PVPC con su correspondiente indicador 1001
+url = 'https://api.esios.ree.es/indicators/1001?start_date='..day..'-'..month..'-'..year..'T00%3A00&end_date='..day..'-'..month..'-'..year..'T23%3A50' --Término de facturación de energía activa del PVPC
 
 -- Petición
 response_body = {}
