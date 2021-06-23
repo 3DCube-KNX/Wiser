@@ -55,9 +55,9 @@ data = json.pdecode(response)
 log(data)
 --Utilizamos los datos de la PVCP obtenidos, se divide entre 1000 para obtener kWh--
 --Hora 00
-grp.write('32/2/21', data.indicator.values[ 23 ].value/1000)
+grp.write('32/2/21', data.indicator.values[1].value/1000)
 
 
 --Hora 01
-grp.write('32/2/22', data.indicator.values[ 24 ].value/1000)
+grp.write('32/2/22', data.indicator.values[2].value/1000)
 
