@@ -9,7 +9,7 @@ token ='4ee20705e6b7c6b05a872d5171a3ba3be1d1936835de7c1722aa02da99356b2a'
 Token=('Token token=\34'..token..'\34')
 
 -- Obtención de la fecha para la petición
-mañana_sin_formato = os.time(os.date('*t')) --+ 86400 	--Hoy más 86400 segundos (+1 día)
+mañana_sin_formato = os.time(os.date('*t')) + 86400 	--Hoy más 86400 segundos (+1 día)
 mañana_con_formato = os.date("*t", mañana_sin_formato)
 dia = mañana_con_formato.day
 mes = mañana_con_formato.month
@@ -17,7 +17,7 @@ año = mañana_con_formato.year
 
 
 -- Url donde está el PVPC 2.0TD con su correspondiente indicador 1001 y filtro para solo datos peninsulares
-url = 'https://api.esios.ree.es/indicators/1001?start_date='..dia..'-'..mes..'-'..año..'T00%3A00Z&end_date='..dia..'-'..mes..'-'..año..'T23%3A50Z&geo_ids[]=8741'
+url = 'https://api.esios.ree.es/indicators/1001?start_date='..dia..'-'..mes..'-'..año..'T00%3A00&end_date='..dia..'-'..mes..'-'..año..'T23%3A50&geo_ids[]=8741'
 
 -- Petición
 response_body = {}
