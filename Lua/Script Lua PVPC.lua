@@ -54,7 +54,7 @@ response = table.concat(response_body)
 data = json.pdecode(response)
 log(data)
 
---Hora de actualizacion de los datos 
+--Hora de actualización de los datos 
 grp.write('32/2/21', data.indicator.values_updated_at)
 
 --Utilizamos los datos de la PVCP obtenidos, se divide entre 1000 para obtener kWh--
