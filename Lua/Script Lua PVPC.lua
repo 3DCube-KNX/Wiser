@@ -37,12 +37,12 @@ headers = {
 })
 
 -- Comprobación que la recepción en correcta
-if type(response_body) ~= 'table' then															-- Si el contenido de la variable es distinto a una tabla entonces
+if type(response_body) ~= 'table' then											-- Si el contenido de la variable es distinto a una tabla entonces
   alert('Fallo al cargar la información')														
 elseif code == 200 then																			-- Si la llamada devuelve el codigo 200, todo OK
   log(code .. ' Datos obtenidos con éxito')
 elseif code == 401 then																			-- Si la llamada devuelve el codigo de error 401 o 404																													
-  alert(code .. ' Fallo con la llave de la API')												-- Mensajes de error
+  alert(code .. ' Fallo con la llave de la API')						-- Mensajes de error
 elseif code == 404 then
   alert(code .. ' Fallo datos no encontrados')
   return
@@ -53,11 +53,15 @@ response = table.concat(response_body)
 
 data = json.pdecode(response)
 log(data)
+
+--Hora de actualizacion de los datos 
+grp.write('32/2/21', data.indicator.values_updated_at)
+
 --Utilizamos los datos de la PVCP obtenidos, se divide entre 1000 para obtener kWh--
 --Hora 00
-grp.write('32/2/21', data.indicator.values[1].value/1000)
+grp.write('32/2/22', data.indicator.values[1].value/1000)
 
 
 --Hora 01
-grp.write('32/2/22', data.indicator.values[2].value/1000)
+grp.write('32/2/23', data.indicator.values[2].value/1000)
 
