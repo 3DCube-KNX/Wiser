@@ -55,7 +55,9 @@ data = json.pdecode(response)
 log(data)
 
 --Hora de actualización de los datos 
-grp.write('32/2/21', data.indicator.values_updated_at)
+año, mes, dia, hora, minutos, segundos = string.match(data.indicator.values_updated_at, '(%d+)-(%d+)-(%d+)T(%d+):(%d+):(%d+)')
+fecha_hora_ordenada = string.format('%s-%s-%s, %s:%s:%s', dia, mes, año, hora, minutos, segundos)
+grp.write('32/2/21', fecha_hora_ordenada)
 
 --Utilizamos los datos de la PVCP obtenidos, se divide entre 1000 para obtener kWh--
 --Hora 00
