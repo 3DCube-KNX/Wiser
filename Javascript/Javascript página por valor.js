@@ -4,7 +4,7 @@ $(function(){
       var value = object.value; //Declaracion  de la variable y asignacion del valor del objeto
       if (state == 'value') {
         if (value == 1) { 	//si el valor del objeto es 1
-          showPlan(3);		// Muestra el plan indicado entre los parentesis
+          showPlan(3);		// Muestra la página indicada
         }
         else if (value == 2) {
           showPlan(4);
