@@ -1,0 +1,46 @@
+$(function() {
+  $('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.css" type="text/css">').appendTo('head');
+
+  $.getScript('https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.js', function() {
+    var el = $('<div></div>').css({
+      position: 'absolute',
+      width: '600px', // Alto de la gráfica
+      height: '300px', // Ancho de la gráfica
+      left: '700px',   // Posición desde la izquierda
+      top: '50px',     // Posición desde arriba
+      zIndex: 999
+    }).appendTo('#plan-4'); // Identificador de la pantalla donde se quiere visualizar la gráfica
+
+    $.getJSON('/user/data.lp', function(data) { // Datos del pvpc desde el archivo data.lpo
+      var labels = [];   
+      
+      for (var i = 0; i < 24; i++) {
+  var label = i.toString();
+  if (label.length == 1) {
+    label = '0' + label;
+  }
+
+  labels.push(label);
+}
+for (var i = 0; i < data.length; i++) { // Precio dividido entre 1000 para kWh
+  data[ i ] = data[ i ] / 1000;
+}
+
+         var chart = new Chartist.Line( // Tipo de gráfica Linea de puntos
+        el.get(0),
+        {
+          labels: labels,
+          series: [ data ]
+        },
+        {
+          low: 0,
+          showArea: false                 // true si quiere que se muestre un área coloreada debajo de la línea
+        }  
+      );
+      
+      $('body').on('showplan', function() {
+        chart.resizeListener();
+      });
+    });
+  });
+});
