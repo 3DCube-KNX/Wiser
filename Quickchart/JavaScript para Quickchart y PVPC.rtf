@@ -1,0 +1,93 @@
+{\rtf1\ansi\deff0\deftab468
+
+{\fonttbl
+{\f000 Courier New;}
+{\f001 Courier New;}
+{\f002 Courier New;}
+{\f003 Courier New;}
+{\f004 Courier New;}
+{\f005 Courier New;}
+{\f006 Courier New;}
+{\f007 Courier New;}
+{\f008 Courier New;}
+{\f009 Courier New;}
+}
+
+{\colortbl
+\red000\green000\blue000;
+\red255\green255\blue255;
+\red000\green128\blue000;
+\red255\green255\blue255;
+\red255\green128\blue000;
+\red255\green255\blue255;
+\red000\green000\blue255;
+\red255\green255\blue255;
+\red128\green128\blue128;
+\red255\green255\blue255;
+\red000\green000\blue128;
+\red255\green255\blue255;
+\red000\green000\blue000;
+\red255\green255\blue255;
+\red128\green000\blue255;
+\red255\green255\blue255;
+\red128\green064\blue000;
+\red255\green255\blue255;
+\red000\green000\blue000;
+\red255\green255\blue255;
+}
+
+\f1836020851\fs20\cb19\cf18 \highlight13\cf12 $\highlight11\cf10\b (\highlight7\cf6 function\highlight11\cf10 ()\highlight1\cf0\b0  \highlight11\cf10\b \{\highlight1\cf0\b0 \par
+  \highlight13\cf12 $\highlight11\cf10\b .\highlight13\cf12\b0 getJSON\highlight11\cf10\b (\highlight9\cf8\b0 '/user/data.lp'\highlight11\cf10\b ,\highlight1\cf0\b0  \highlight7\cf6\b function\highlight11\cf10 (\highlight13\cf12\b0 data\highlight11\cf10\b )\highlight1\cf0\b0  \highlight11\cf10\b \{\highlight1\cf0\b0 \par
+    \highlight7\cf6\b var\highlight1\cf0\b0  \highlight13\cf12 labels\highlight1\cf0  \highlight11\cf10\b =\highlight1\cf0\b0  \highlight11\cf10\b [];\highlight1\cf0\b0 \par
+\par
+    \highlight7\cf6\b for\highlight1\cf0\b0  \highlight11\cf10\b (\highlight7\cf6 var\highlight1\cf0\b0  \highlight13\cf12 i\highlight1\cf0  \highlight11\cf10\b =\highlight1\cf0\b0  \highlight5\cf4 0\highlight11\cf10\b ;\highlight1\cf0\b0  \highlight13\cf12 i\highlight1\cf0  \highlight11\cf10\b <\highlight1\cf0\b0  \highlight5\cf4 24\highlight11\cf10\b ;\highlight1\cf0\b0  \highlight13\cf12 i\highlight11\cf10\b ++)\highlight1\cf0\b0  \highlight11\cf10\b \{\highlight1\cf0\b0 \par
+      \highlight7\cf6\b var\highlight1\cf0\b0  \highlight13\cf12 label\highlight1\cf0  \highlight11\cf10\b =\highlight1\cf0\b0  \highlight13\cf12 i\highlight11\cf10\b .\highlight15\cf14\b0 toString\highlight11\cf10\b ();\highlight1\cf0\b0 \par
+      \highlight7\cf6\b if\highlight1\cf0\b0  \highlight11\cf10\b (\highlight13\cf12\b0 label\highlight11\cf10\b .\highlight13\cf12\b0 length\highlight1\cf0  \highlight11\cf10\b ==\highlight1\cf0\b0  \highlight5\cf4 1\highlight11\cf10\b )\highlight1\cf0\b0  \highlight11\cf10\b \{\highlight1\cf0\b0 \par
+        \highlight13\cf12 label\highlight1\cf0  \highlight11\cf10\b =\highlight1\cf0\b0  \highlight9\cf8 '0'\highlight1\cf0  \highlight11\cf10\b +\highlight1\cf0\b0  \highlight13\cf12 label\highlight11\cf10\b ;\highlight1\cf0\b0 \par
+      \highlight11\cf10\b \}\highlight1\cf0\b0 \par
+\par
+      \highlight13\cf12 labels\highlight11\cf10\b .\highlight13\cf12\b0 push\highlight11\cf10\b (\highlight13\cf12\b0 label\highlight11\cf10\b );\highlight1\cf0\b0 \par
+    \highlight11\cf10\b \}\highlight1\cf0\b0 \par
+\par
+    \highlight7\cf6\b for\highlight1\cf0\b0  \highlight11\cf10\b (\highlight7\cf6 var\highlight1\cf0\b0  \highlight13\cf12 i\highlight1\cf0  \highlight11\cf10\b =\highlight1\cf0\b0  \highlight5\cf4 0\highlight11\cf10\b ;\highlight1\cf0\b0  \highlight13\cf12 i\highlight1\cf0  \highlight11\cf10\b <\highlight1\cf0\b0  \highlight13\cf12 data\highlight11\cf10\b .\highlight13\cf12\b0 length\highlight11\cf10\b ;\highlight1\cf0\b0  \highlight13\cf12 i\highlight11\cf10\b ++)\highlight1\cf0\b0  \highlight11\cf10\b \{\highlight1\cf0\b0 \par
+      \highlight13\cf12 data\highlight11\cf10\b [\highlight1\cf0\b0  \highlight13\cf12 i\highlight1\cf0  \highlight11\cf10\b ]\highlight1\cf0\b0  \highlight11\cf10\b =\highlight1\cf0\b0  \highlight13\cf12 data\highlight11\cf10\b [\highlight1\cf0\b0  \highlight13\cf12 i\highlight1\cf0  \highlight11\cf10\b ].\highlight13\cf12\b0 value\highlight1\cf0  \highlight11\cf10\b /\highlight1\cf0\b0  \highlight5\cf4 1000\highlight11\cf10\b ;\highlight1\cf0\b0 \par
+    \highlight11\cf10\b \}\highlight1\cf0\b0 \par
+\par
+    \highlight7\cf6\b var\highlight1\cf0\b0  \highlight13\cf12 width\highlight1\cf0  \highlight11\cf10\b =\highlight1\cf0\b0  \highlight5\cf4 600\highlight11\cf10\b ;\highlight1\cf0\b0 \par
+    \highlight7\cf6\b var\highlight1\cf0\b0  \highlight13\cf12 height\highlight1\cf0  \highlight11\cf10\b =\highlight1\cf0\b0  \highlight5\cf4 400\highlight11\cf10\b ;\highlight1\cf0\b0 \par
+    \par
+    \highlight7\cf6\b var\highlight1\cf0\b0  \highlight13\cf12 params\highlight1\cf0  \highlight11\cf10\b =\highlight1\cf0\b0  \highlight11\cf10\b \{\highlight1\cf0\b0 \par
+      \highlight13\cf12 type\highlight11\cf10\b :\highlight1\cf0\b0  \highlight9\cf8 'line'\highlight11\cf10\b ,\highlight1\cf0\b0 \par
+      \highlight13\cf12 data\highlight11\cf10\b :\highlight1\cf0\b0  \highlight11\cf10\b \{\highlight1\cf0\b0 \par
+        \highlight13\cf12 labels\highlight11\cf10\b :\highlight1\cf0\b0  \highlight13\cf12 labels\highlight11\cf10\b ,\highlight1\cf0\b0 \par
+        \highlight13\cf12 datasets\highlight11\cf10\b :\highlight1\cf0\b0  \highlight11\cf10\b [\highlight1\cf0\b0 \par
+          \highlight11\cf10\b \{\highlight1\cf0\b0 \par
+            \highlight13\cf12 label\highlight11\cf10\b :\highlight1\cf0\b0  \highlight9\cf8 'Precio PVPC'\highlight11\cf10\b ,\highlight1\cf0\b0 \par
+            \highlight13\cf12 backgroundColor\highlight11\cf10\b :\highlight1\cf0\b0  \highlight9\cf8 'rgb(255, 99, 132)'\highlight11\cf10\b ,\highlight1\cf0\b0 \par
+            \highlight13\cf12 borderColor\highlight11\cf10\b :\highlight1\cf0\b0  \highlight9\cf8 'rgb(255, 99, 132)'\highlight11\cf10\b ,\highlight1\cf0\b0 \par
+            \highlight13\cf12 data\highlight11\cf10\b :\highlight1\cf0\b0  \highlight13\cf12 data\highlight11\cf10\b ,\highlight1\cf0\b0 \par
+            \highlight13\cf12 fill\highlight11\cf10\b :\highlight1\cf0\b0  \highlight7\cf6\b false\highlight11\cf10 ,\highlight1\cf0\b0 \par
+            \highlight11\cf10\b \},\highlight1\cf0\b0 \par
+        \highlight11\cf10\b ]\highlight1\cf0\b0 \par
+      \highlight11\cf10\b \},\highlight1\cf0\b0 \par
+      \highlight13\cf12 options\highlight11\cf10\b :\highlight1\cf0\b0  \highlight11\cf10\b \{\highlight1\cf0\b0 \par
+        \highlight13\cf12 title\highlight11\cf10\b :\highlight1\cf0\b0  \highlight11\cf10\b \{\highlight1\cf0\b0 \par
+          \highlight13\cf12 display\highlight11\cf10\b :\highlight1\cf0\b0  \highlight7\cf6\b true\highlight11\cf10 ,\highlight1\cf0\b0 \par
+          \highlight17\cf16\b text\highlight11\cf10 :\highlight1\cf0\b0  \highlight9\cf8 'PVPC'\highlight11\cf10\b ,\highlight1\cf0\b0 \par
+        \highlight11\cf10\b \},\highlight1\cf0\b0 \par
+      \highlight11\cf10\b \},\highlight1\cf0\b0 \par
+    \highlight11\cf10\b \};\highlight1\cf0\b0 \par
+    \par
+    \highlight7\cf6\b var\highlight1\cf0\b0  \highlight13\cf12 cdata\highlight1\cf0  \highlight11\cf10\b =\highlight1\cf0\b0  \highlight17\cf16\b encodeURIComponent\highlight11\cf10 (\highlight13\cf12\b0 JSON\highlight11\cf10\b .\highlight13\cf12\b0 stringify\highlight11\cf10\b (\highlight13\cf12\b0 params\highlight11\cf10\b ));\highlight1\cf0\b0 \par
+    \highlight7\cf6\b var\highlight1\cf0\b0  \highlight13\cf12 src\highlight1\cf0  \highlight11\cf10\b =\highlight1\cf0\b0  \highlight9\cf8 'https://quickchart.io/chart?w='\highlight1\cf0  \highlight11\cf10\b +\highlight1\cf0\b0  \highlight13\cf12 width\highlight1\cf0  \highlight11\cf10\b +\highlight1\cf0\b0  \highlight9\cf8 '&h='\highlight1\cf0  \highlight11\cf10\b +\highlight1\cf0\b0  \highlight13\cf12 height\highlight1\cf0  \highlight11\cf10\b +\highlight1\cf0\b0  \highlight9\cf8 '&c='\highlight1\cf0  \highlight11\cf10\b +\highlight1\cf0\b0  \highlight13\cf12 cdata\highlight11\cf10\b ;\highlight1\cf0\b0  \highlight3\cf2 //Url del servicio\par
+\highlight1\cf0     \par
+    \highlight13\cf12 $\highlight11\cf10\b (\highlight9\cf8\b0 '<img>'\highlight11\cf10\b ).\highlight13\cf12\b0 css\highlight11\cf10\b (\{\highlight1\cf0\b0  \highlight3\cf2 // Se crea una etiqueta de imag\u233?n para a\u241?adirla al html y su CSS\par
+\highlight1\cf0       \highlight13\cf12 position\highlight11\cf10\b :\highlight1\cf0\b0  \highlight9\cf8 'absolute'\highlight11\cf10\b ,\highlight1\cf0\b0 \par
+      \highlight13\cf12 width\highlight11\cf10\b :\highlight1\cf0\b0  \highlight13\cf12 width\highlight1\cf0  \highlight11\cf10\b +\highlight1\cf0\b0  \highlight9\cf8 'px'\highlight11\cf10\b ,\highlight1\cf0\b0 \par
+      \highlight13\cf12 height\highlight11\cf10\b :\highlight1\cf0\b0  \highlight13\cf12 height\highlight1\cf0  \highlight11\cf10\b +\highlight1\cf0\b0  \highlight9\cf8 'px'\highlight11\cf10\b ,\highlight1\cf0\b0 \par
+      \highlight13\cf12 left\highlight11\cf10\b :\highlight1\cf0\b0  \highlight9\cf8 '500px'\highlight11\cf10\b ,\highlight1\cf0\b0 \par
+      \highlight17\cf16\b top\highlight11\cf10 :\highlight1\cf0\b0  \highlight9\cf8 '50px'\highlight11\cf10\b ,\highlight1\cf0\b0 \par
+      \highlight13\cf12 zIndex\highlight11\cf10\b :\highlight1\cf0\b0  \highlight5\cf4 999\highlight1\cf0 \par
+    \highlight11\cf10\b \}).\highlight13\cf12\b0 appendTo\highlight11\cf10\b (\highlight9\cf8\b0 '#plan-4'\highlight11\cf10\b ).\highlight13\cf12\b0 attr\highlight11\cf10\b (\highlight9\cf8\b0 'src'\highlight11\cf10\b ,\highlight1\cf0\b0  \highlight13\cf12 src\highlight11\cf10\b );\highlight1\cf0\b0  \highlight3\cf2 // P\u225?gina donde se visualizar\u225? la im\u225?gen\par
+\highlight1\cf0   \highlight11\cf10\b \});\highlight1\cf0\b0 \par
+\highlight11\cf10\b \});}
