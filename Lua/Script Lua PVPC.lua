@@ -5,7 +5,7 @@ ltn12 = require('ltn12')
 
 payload =  ''
 
-token ='Escriba aquí su token' 
+token ='Escriba aquí su token' -- Deje las comillas simples
 Token=('Token token=\34'..token..'\34')
 
 -- Obtención de la fecha para la petición
